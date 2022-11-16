@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Desencriptar archivos</title>
+</head>
+<body>
+    
+    <div>
+        <form action="../services/desencriptar.php" method="POST" enctype="multipart/form-data">
+            <div class="drag-area">
+                <h2>Arrastra y suelta tus archivos encriptados</h2>
+                <span>O</span>
+                <button>Selecciona tus archivos</button>
+                <input type="file" name="fileEncriptados[]" id="input-file" multiple>
+            </div>
+            <div id="preview"></div>
+            <input type="submit" name="btnSubmit" id="btnSubmit" value="Enviar Archivos">
+        </form>        
+    </div>
+
+  
+
+   
+
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>
